@@ -15,3 +15,7 @@ func NewTask(id string, desc string) Task {
 func (t Task) IsNewTask() bool {
 	return t.state == "NEW"
 }
+
+func (t Task) GetState() string {
+	return t.state
+}
